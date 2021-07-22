@@ -39,4 +39,4 @@ clean:
 hygienic:
 	rm -f $(OUT) bibliography.bib
 
-.PHONY: clean all
+.PHONY: clean all hygienic
