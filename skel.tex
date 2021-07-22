@@ -1,0 +1,42 @@
+%% skel.tex
+
+\documentclass{hacett-socsci-thesis}
+
+\usepackage[style=apa,backend=biber,doi=false,isbn=false,url=false]{biblatex}
+\usepackage[english]{babel}
+\usepackage{filecontents}
+
+\title{My really interesting and incredibly wonderful thesis}
+\HSTauthor{İsmail Göktuğ}{Kayaalp}
+\date{2021}
+\HSTinfo{English Linguistics}{English Linguistics}{Master’s}{February 14th, 2021}
+\HSTgraddir{Prof. Dr. You Know WHO}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Julius CAESAR}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Isaac NEWTON}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Baruch SPINOZA}
+\HSTaddadvisor{Asst. Prof. Dr.}{Dr. Öğr. Üyesi}{Albert EINSTEIN}
+
+\addbibresource{bibliography.bib}
+
+\begin{document}
+
+\HSTfrontmatter{%
+    \input{Abstract.tex}
+}{Example thesis, Thesis in \LaTeX, Hacettepe University}
+
+\HSTpreface
+\input{Preface.tex}
+
+\HSTmainmatter
+
+\HSTintro
+\input{Introduction.tex}
+
+\chapter{First chapter}
+
+\HSTconcl
+\input{Conclusion.tex}
+
+\HSTbib
+
+\end{document}
